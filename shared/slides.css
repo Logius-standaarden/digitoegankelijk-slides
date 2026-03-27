@@ -142,9 +142,11 @@ h4 {font-size: 1.2em; margin: 0.5em 0}
 .clear .slide:not(.cover), .slide:not(.cover).clear {background-image: none}
 .slide:target {outline: lime solid 0.5em; outline-offset: 1em}
 .slide:not(.cover, .final) { border: 1.5em solid var(--main-dimmed); }
+.darkmode .slide:not(.cover, .final) { border-color: rgba(0,0,0,0.2); }
 .slide a {color: inherit}
 .watermark {color: red; font-size: 400%}
 .cover__box { background-color: var(--main-dimmed); padding: 2em;}
+.darkmode .cover__box { background-color: rgba(0,0,0,0.2); }
 
 /* EM elements get a highlighter-like background */
 .slide em {font-style: normal; padding-left: 0.1em; padding-right: 0.1em;
@@ -216,8 +218,6 @@ ul.with-icons > li > *:first-child {display: inline-block;
 .slide.chapter {padding: 2em 2em 2em 2em;
   background-color: var(--main); color: white; border: 0; display: inline-flex; align-items: center; justify-content: center; flex-direction: column; }
 .slide.chapter * { color: white; }
-.darkmode .slide.cover, 
-.has-darkmode .slide.cover { background-image: none; }
 .slide.chapter h2 { font-size: 120%; font-weight: normal; font-style: italic; }
 
 /* Last page */
