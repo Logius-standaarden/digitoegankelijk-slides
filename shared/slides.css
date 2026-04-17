@@ -105,6 +105,13 @@
 .larger-120 { font-size: 120%; }
 .larger-150 { font-size: 150%; }
 
+.thought { display: inline-flex !important; background-color: red;}
+.thought p { font-size: 175%; align-self: center; text-align: center;}
+.thought p > b:first-child { text-transform: uppercase; letter-spacing: 0.01em; font-size: 75%; }
+
+.related-url {  position: absolute;bottom: 1em;font-family: monospace;font-size: 1.1em; }
+.pre-h1 { line-height: 1; }
+
 /* Common layout independent of slide mode */
 html {font: 400 1em/1.3 ROSans, "Fira Sans", Verdana,
     sans-serif;

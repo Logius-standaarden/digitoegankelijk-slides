@@ -4,7 +4,7 @@
  <head>
   <meta charset=UTF-8>
   <meta content="width=device-width" name="viewport">
-  <title>AB position paper on LLMs in our community</title>
+  <title>AI, web and web standards</title>
   <link rel="stylesheet" href="../shared/slides.css">
   <script src="../shared/b6plus.js"></script>
  </head>
@@ -35,105 +35,346 @@
 
   <section class="slide cover" id="cover">
     <div class="cover__box">
-      <h1>AB position paper on LLMS</h1>
-      <address>Hidde de Vries (AB)</address>
-      <p>Web & AI Interest Group<br>
-      Online<br>
-        13 April 2026</p>
+      <h1>AI, the web, and web standards</h1>
+      <address>Hidde de Vries (AB/Logius)</address>
+      <p>Hangzhou Developer Meetup<br>
+      
+        19 April 2026</p>
     </div>
   </section>
 
   <section class=comment>
    <p></p>
   </section>
-  
+  <!-- 
 
 
   <section class="slide">
-    <h1>What's the AB?</h1>
-    <ul class="incremental larger-120">
-      <li>one of the governance bodies at W3C (the others are TAG and BoD)</li>
-      <li>concerned with effectiveness of W3C community/process</li>
-      <li>advises Team, Groups and wider community</li>
-      <li><span style="text-transform: uppercase; display: inline-block; padding: .125em .25em; background-color: #333; color: #fff; font-size: 0.85em; font-weight: bold; line-height: 1;">new</span> published a position paper</li>
-    </ul>
+    <h1 style="font-size: 250%;">AI<br>AI and web<br/>AI and web standards</h1>
   </section>
   
   <section class=comment>
   </section>  
   
-  <section class="slide" style="border: 0;">
-    <img src="images/llms.png" class="cover" alt="screenshot of the paper" />
-    <span style="background-color: rgba(0,0,0,0.7); border-radius: 3px; color: white; padding: .25em .75em; font-weight: bold; font-family: monospace; position: absolute; bottom: 2em; font-size: 120%; ">w3.org/TR/llms-standards</span>
+  <section class="slide chapter">
+    <h1 style="font-size: 250%;">AI</h1>
   </section>
   
   <section class=comment>
+  </section>  
+  
+  
+  <section class="slide thought">
+    <p><b>Students of AI often learn</b><br>linguistics, computer science, mathemathics, psychology, neuroscience, philosophy of language, philosophy of science</p>
   </section>
   
+  <section class=comment>
+  </section>  
+
+  <section class="slide thought">
+    <p><b>Natural Language Processing</b><br>branch of AI concerned with <b>reading</b>, <b>writing</b> and <b>communicating</b> in human languages (eg speech recognition, machine translation)</p>
+  </section>
+  
+  <section class=comment>
+  </section>  
+
+  <section class="slide thought">
+    <p><b>Machine Learning</b><br>the process in which machines <b>learn to classify</b> by themselves after being shown a large amount of labelled examples</p>
+  </section>
+  
+  <section class=comment>
+  </section>  
+
+  <section class="slide thought">
+    <p><b>Generative AI</b><br>large <b>language models</b> that were trained to generate text, media or code in response to <b>prompts</b></p>
+  </section>
+  
+  <section class=comment>
+  </section>  
+
+  <section class="slide thought">
+    <p><b>Agents</b><br>task-oriented systems that can act on a human's behalf</p>
+  </section>
+  
+  <section class=comment>
+  </section>  
+
+ 
+  <section class="slide chapter">
+    <h1 style="font-size: 250%;">AI and web</h1>
+  </section>
+  
+  <section class=comment>
+  </section>  
+-->
+
+  
+<section class="slide chapter">
+  <h1 style="font-size: 250%;">AI and the web</h1>
+</section>
+
+<section class=comment>
+</section>  
+
+  <section class="slide thought">
+    <p>The web is <b>open</b> for everyone to read and write</p>
+  </section>
+  
+  <section class=comment>
+  </section>  
+
   <section class="slide">
-    <h1>What the Note does</h1>
-    <ul class="incremental larger-120">
-      <li>summarise our current thinking</li>
-      <li>weigh benefits and risks</li>
-      <li>suggest guardrails</li>
-    </ul>
+    <h1>LLMs train on the open web</h1>
+    <img src="images/openweb.png" alt="screenshots of w3c wikipedia page and hidde's blog" class="cover" />
   </section>
   
   <section class=comment>
   </section>  
   
   <section class="slide">
-    <h1>Where benefits may outweigh risks</h1>
-    <ul class="incremental larger-120">
-      <li>Demos, Tests and Examples</li>
-      <li>Interrogate, Spellcheck, Edit Standards</li>
-      <li>Brainstorming Names</li>
-    </ul>
+    <h1>LLMs train on the open web</h1>
+    <img src="images/openweb2.png" alt="same screenshots, now overlayed is the text dont use my content to train your models" class="cover" />
+  </section>
+  
+  <section class=comment>
+  </section>  
+
+  <section class="slide">
+    <h1>LLMs put a strain on the web</h1>
+    <img src="images/strain.png" alt="screenshots of matthias blog and drew devaults post 'please stop externalising your costs directly into my face'" class="cover" />
+  </section>
+  
+  <section class=comment>
+  </section>  
+
+  <section class="slide">
+    <h1>LLMs “co-author”<br>the web</h1>
+    <img src="images/coauthor.png" alt="screenshot of study Poisoning attacks on LLMs require a near constnat number of poisoning samples'" class="cover" />
+  </section>
+  
+  <section class=comment>
+  </section>  
+
+  <section class="slide">
+    <img src="images/finetuning.png" alt="screenshot of study that shows fine tuning backdoor experiments, has a flow chart where a llama model is poisoned and how the content shows up in the output" class="cover" />
   </section>
   
   <section class=comment>
   </section>  
   
   <section class="slide">
-    <h1>Where risks may outweigh benefits</h1>
+    <h1>Possible impacts of LLMs on the web (good)</h1>
     <ul class="incremental">
-      <li>Copyright</li>
-      <li>Security</li>
-      <li>Subtle incorrectness</li>
-      <li>Novelty</li>
-      <li>Verbosity</li>
-      <li>Interpretative scribing</li>
-      <li>Climate impact</li>
+      <li>Content may be more clear and relevant</li>
+      <li>Easier to find things via more fuzzy search and structured result</li>
+      <li>Very educated guesses at text alternatives</li>
+      <li>More useful recommendations</li>
     </ul>
   </section>
   
   <section class=comment>
   </section>  
-  
-  
+
   <section class="slide">
-    <h1>Suggested guardrails</h1>
-    <ul>
-      <li>Check before sharing</li>
-      <li>Clearly label LLM output</li>
-      <li>Assume full responsibility for the content</li>
-      <li>Prefer smaller and more task-specific models over large and general-purpose models</li>
-      <li>Embrace thoughtful discussions</li>
+    <h1>Possible impacts of LLMs on the web (bad)</h1>
+    <ul class="incremental">
+      <li>Possible increase of filter bubbles</li>
+      <li>Decreased factuality of web content</li>
+      <li>Security risks of AI agents acting on the web</li>
+      <li>More phishing risk as it is less work</li>
+      <li>Cost increase due to lower click through rates</li>
     </ul>
   </section>
   
   <section class=comment>
   </section>  
-  
+
 
   <section class="slide">
-    <h1>Questions /<br> comments / <br>thoughts?</h1>
-       </section> 
-
-  <section class=comment>
+    <img src="images/aiweb.png" alt="screenshot of w3c ai and the web paper note by Dominique Hazael-Massieux" class="cover" />
   </section>
+  
+  <section class=comment>
+  </section>  
 
+  <section class="slide">
+    <img src="images/aiweb-zh.png" alt="screenshot of same page, chinese version" class="cover" />
+  </section>
+  <section class=comment>
+  
+  </section>  
 
+  
+  <section class="slide chapter">
+    <h1 style="font-size: 250%;">AI and web standards</h1>
+  </section>
+  
+  <section class=comment>
+  </section>  
+    
+  <section class="slide">
+    <h1 style="position: absolute; left: -99em;">At different standards organisations</h1>
+    <style>
+      #w3c-standards-long-list { display: grid; grid-template-columns: 1fr 1fr; gap: 2em; }
+      #w3c-standards-long-list h2 { font-size: 1em; text-transform: uppercase; margin: 0.25em 0; font-size: 85%;}
+      #w3c-standards-long-list ul { margin-bottom: 1em;}
+      #w3c-standards-long-list li { list-style: none; margin: 0; line-height: 1.1; margin-bottom: .25em}
+    </style>
+    <div id="w3c-standards-long-list">
+      <div>
+        <h2>W3C</h2>
+        <ul>
+          <li>Web and AI IG</li>
+          <li>Web Machine Learning WG + CG</li>
+          <li>CGs: AI Agent Protocol, Autonomous Agents on the Web, AI Knowledge Representation, Web AI for Time Series</li>
+        </ul>
+        <h2>IETF</h2>
+        <ul>
+            <li>AI Preferences WG</li>
+            <li>Agent to Agent BOF</li>
+        </ul>
+        <h2>ECMA</h2>
+        <ul>
+          <li>TC 56 </li>
+        </ul>
+      </div>
+      <div>
+        <h2>CEN/CENELEC</h2>
+        <ul>
+          <li>JTC 21 + 5 WGs <i>(many beyond web)</i></li>
+        </ul>
+        <h2>ETSI</h2>
+        <ul>
+            <li>TC Securing AI (SAI)</li>
+            <li>TC DATA </li>
+        </ul>
+        <h2>C2PA</h2>
+        <ul>
+          <li>Content Credentials</li>
+        </ul>
+        <h2>Agentic AI Foundation</h2>
+        <ul>
+          <li>MCP</li>
+          <li>AGENTS.MD</li>
+        </ul>
+      </div>    
+    </div>
+  </section>
+  
+  <section class=comment>
+  </section>    
+ 
+  <section class="slide">
+    <div>
+      <p class="pre-h1">Web Machine  Learning WG  (W3C)</p>
+      <h1 style="font-size: 250%;">Web Neural Network API</h1>
+      <div class="related-url">github.com/webmachinelearning/webnn/blob/main/explainer.md</div>
+    </div>
+    <div class="incremental">
+      <p class="larger-150">dedicated low-level API for neural network inference hardware acceleration</p>    
+    </div>
+  </section>
+  
+  <section class=comment>
+  </section>  
+ 
+  <section class="slide">
+    <div>
+      <p class="pre-h1">Web Machine  Learning WG  (W3C)</p>
+      <h1 style="font-size: 250%;">Web Neural Network API</h1>
+      <div class="related-url">github.com/webmachinelearning/webnn/blob/main/explainer.md</div>
+    </div>
+    <div>
+      <p class="larger-150">object detection, face detection, machine translation, noise suppression</p>    
+    </div>
+  </section>
+  
+  <section class=comment>
+  </section>  
+  
+  <section class="slide">
+    <div>
+      <img src="images/no-consensus.png" alt="note: no consensus on feature across browsers" style="position: absolute;right: -.25em;top: 0;width: 7em;" />
+      <p class="pre-h1">Google's Chrome Built-in AI Team + Members of the Web Machine  Learning CG  (W3C)</p>
+      <h1 style="font-size: 250%;">Prompt API</h1>
+      <div class="related-url">github.com/webmachinelearning/prompt-api</div>
+    </div>
+    <div>
+    </div>
+  </section>
+  
+  <section class=comment>
+  </section>  
+  
+  <section class="slide">
+    <img src="images/vk.png" alt="newswebsite screenshot" class="cover" />
+  </section>
+  
+  <section class=comment>
+  </section>  
+  
+  <section class="slide">
+    <img src="images/vk2.png" alt="same newswebsite screenshot with 'summarise article' button highlighted" class="cover" />
+  </section>
+  
+  <section class=comment>
+  </section>  
+  
+  <section class="slide">
+    <img src="images/process-1.png" alt="arrow back from server to site, labeled 'summarised content'" class="cover" />
+  </section>
+  
+  <section class=comment>
+  </section>  
+  
+  <section class="slide">
+    <img src="images/process-2.png" alt="same newswebsite displayed in a browser with a robot on top of the browser window, an arrow points at it and is labeled 'request to summarise, summarised content', it all stays in the browser" class="cover" />
+  </section>
+  
+  <section class=comment>
+  </section>  
+  
+  <section class="slide">
+    <img src="images/process-3.png" alt="same newswebsite screenshot with 'summarise article' button highlighted" class="cover" />
+  </section>
+  
+  <section class=comment>
+  </section>  
+  
+  <section class="slide">
+    <div>
+      <img src="images/no-consensus.png" alt="note: no consensus on feature across browsers" style="position: absolute;right: -.25em;top: 0;width: 7em;" />
+      <p class="pre-h1">Google's Chrome Built-in AI Team + <br>Members of the Web Machine  Learning CG  (W3C)</p>
+      <h1 style="font-size: 250%;">Translation API</h1>
+      <div class="related-url">github.com/webmachinelearning/translation-api</div>
+    </div>
+    <div>
+    </div>
+  </section>
+  
+  <section class=comment>
+  </section>  
+      
+  
+  <section class="slide">
+    <div>
+      <p class="pre-h1">AI  Preferences WG (IETF)</p>
+      <h1 style="font-size: 250%;">A Vocabulary For Expressing AI Usage Preferences</h1>
+      <div class="related-url">ietf-wg-aipref.github.io/drafts/draft-ietf-aipref-vocab.html</div>
+    </div>
+    <div>
+    </div>
+  </section>
+  
+  <section class=comment>
+  </section>  
+
+  <section class="slide chapter">
+    <h1 style="font-size: 250%;">Thanks!</h1>
+  </section>
+  
+  <section class=comment>
+  </section>  
 
   <!--=============================================================
 			     User manual
