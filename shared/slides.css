@@ -104,6 +104,8 @@
 
 .larger-120 { font-size: 120%; }
 .larger-150 { font-size: 150%; }
+h1:has(div:first-child + div) div:first-child { font-size: 50%; font-weight: normal; color: black; margin-bottom: 0.5em;}
+h1:has(div:first-child + div) div:nth-child(2)::first-letter { text-transform: uppercase; }
 
 .thought { display: inline-flex !important; background-color: red;}
 .thought p { font-size: 175%; align-self: center; text-align: center;}

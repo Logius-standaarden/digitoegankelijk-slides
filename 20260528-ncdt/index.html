@@ -64,7 +64,31 @@
    <p>Zelf vind ik het trouwens ook altijd leuk om hier mensen te spreken voor wie alles nog nieuw is, ik hoop dat jullie er ook bij zijn dit jaar, als je nieuw bent, een speciaal welkom!</p>
    <p>Hopelijk kan ik je een beetje helpen om beter te begrijpen wat we met WCAG proberen te doen… of heb je ideeën.</p>
   </section>
-
+  
+  <style>
+    #map-pins li::marker { width: 1em; display: inline-block; }
+    #map-pins li { list-style: none; font-weight: bold; background-color: rgba(255,255,255,0.7); position: absolute; background-image: url(images/pin.png); background-position: center left; background-size: 1.15em; padding-left: 1.5em; background-repeat: no-repeat; line-height: 1; }
+  </style>
+  <section class="slide" style="border: 0; position: relative;">
+    <img src="images/map.png" class="cover" alt="wereldkaart" />
+    <ul id="map-pins">
+      <li style="left: 19em; top: 3em; max-width: 10em;">Europa</li>
+      <li style="left: 6em; top: 5.5em;">Verenigde Staten</li>
+      <li style="left: 7em; top: 2.5em;">Canada</li>
+      <li style="left: 11em; top: 12.5em;">Brazilië</li>
+      <li style="left: 30em; top: 5.5em;">China</li>
+      <li style="left: 27em; top: 2.5em;">Rusland</li>
+      <li style="left: 34em; top: 4.5em;">Japan</li>
+      <li style="left: 33em; top: 14.5em;">Australië</li>
+      <li style="left: 32.5em; top: 7.1em;">Taiwan</li>
+    </ul>
+  </section>
+  
+  <section class=comment>
+    <p>Als je een wereldkaart erbij pakt zie je dat op bijna de hele wereld wetgeving bestaat die op WCAG gebaseerd is, of waar WCAG, al dan niet via een andere standaard, wordt gebruikt om te zeggen, dit is hoe we vaststellen wat toegankelijke web content is.</p>
+    <p>Bron kaart: Wikipedia. Bron landen: W3C Laws and Policies.</p>
+  </section>
+  
   <section class="slide" style="border: 0; background-color: white;">
     <img src="images/silver.jpg" class="contain" alt="editors team van WCAG" />
   </section>
@@ -99,6 +123,7 @@
     <p>Veel van het werk wat we daar deden kwam in een grote pull request… voor de mensen wie dat niks zegt… een voorstel om iets aan te passen.</p> 
 
   </section>
+
   <section class="slide" style="border: 0;">
     <img src="images/updates-gh-zoom.png" class="cover" alt="zoomed in versie waar je ziet dat er 736 commits en 582 aangepaste bestanden zijn" />
   </section>
@@ -117,12 +142,12 @@
   </section>
 
   <style>
-    #wcag-principes { display: flex;  padding-left: 0; margin-left: 0; gap: .5em; margin-top: 3em; } 
-    #wcag-principes li { list-style: none; margin-left: 0; border-radius: 100%; background-color: gray; align-content: center; aspect-ratio: 1 / 1; flex: 1; text-align: center; background-color: var(--lux-color-violet-700); color: white; font-weight: bold; }</style>  
+    #wcag-principes { display: flex;  padding-left: 0; margin-left: 0; gap: .6em; margin-top: 3em; } 
+    #wcag-principes li { list-style: none; margin-left: 0; border-radius: 100%; align-content: center; aspect-ratio: 1 / 1; flex: 1; text-align: center; background-color: var(--lux-color-violet-700); color: white; font-weight: bold; font-size: 1.25em; line-height: 1; }</style>  
   <section class="slide">
     <h1>WCAG 2: principes (4)</h1>
     <ul class="incremental" id="wcag-principes">
-      <li>Waarneembaar</li>
+      <li>Waar&shy;neembaar</li>
       <li>Bedienbaar</li>
       <li>Begrijpelijk</li>
       <li>Robuust</li>
@@ -139,25 +164,16 @@
   </section> 
   
   <section class=comment>
-    <p>(getallen corresponderen met 2.2)</p>
+    <p><i>(getallen corresponderen met 2.2)</i></p>
+    <p>De richtlijnen geven <b>concrete invulling</b> aan de principes. </p>
+    <p>Ze maken content direct <b>toegankelijker</b> voor mensen en zorgen dat content <b>in andere vormen</b> kan worden geconsumeerd.</p>
+    <p>Richtlijnen zijn niet direct testbaar, ze framen de doelen.</p>
   </section>
 
-  <section class="slide">
-    <h1>WCAG 2: richtlijnen (13)</h1>
-    <p class="larger-120">Maken content direct <b>toegankelijker</b> voor mensen en zorgen dat content <b>in andere vormen</b> kan worden geconsumeerd.</p>
-    <p class="larger-120">Richtlijnen zijn niet direct testbaar, ze framen de doelen.</p>
-  </section> 
-  
-  <section class=comment>
-  </section>
-
-  <section class="slide">
+  <section class="slide" style="position: relative;">
     <h1>WCAG 2: succescriteria (55)</h1>
-    <div class="incremental">
-    <p class="larger-120">Succescriteria zijn testbaar.</p>
-    <p class="larger-120">Conformiteitsniveaus: A, AA en AAA (78 totaal, 55 verplicht).</p>
     <p class="larger-120">Voorbeeld: <b>1.1.1 Tekstalternatieven</b></p>
-    </div>
+    <img src="images/111.png"  style="position: absolute; transform: rotate(-1deg); top: 8em; left: 0;" alt="screenshot van WCAG 1.1.1 understanding document" />
   </section> 
   
   <section class=comment>
@@ -172,14 +188,39 @@
   </section>
   
   <section class="slide">
-    <h1>Wat in de huidige versie niet goed lukt</h1>
-    <ul class="incremental">
-      <li>Alle beperkingen meenemen (en gelijk verdeeld)</li>
-      <li>Rekening houden met opkomende technologieën</li>
-      <li>Nieuwe eisen toevoegen</li>
-      <li>Relatie met authoring tools (CMS/LMS), browsers, hulptechnologieën</li>
-      <li>Gebruikersaanwijzing</li>
-    </ul>
+    <h1><div>WCAG 2 is</div> <div>niet genoeg representatief voor alle beperkingen</div></h1>
+  </section> 
+  
+  <section class=comment>
+    <p></p>
+  </section>
+  
+  <section class="slide">
+    <h1><div>In WCAG 2 is</div> <div>opkomende technologie niet makkelijk mee te nemen</div></h1>
+  </section> 
+  
+  <section class=comment>
+    <p></p>
+  </section>
+
+  <section class="slide">
+    <h1><div>In WCAG 2 is het</div> <div>lastig uit te breiden met nieuwe eisen</div></h1>
+  </section> 
+  
+  <section class=comment>
+    <p></p>
+  </section>
+
+  <section class="slide">
+    <h1><div>In WCAG 2 mist</div> <div>integratie met authoring tools (zoals CMS, LMS), browsers, hulptechnologieën</div></h1>
+  </section> 
+  
+  <section class=comment>
+    <p></p>
+  </section>
+
+  <section class="slide">
+    <h1><div>Voor WCAG 2 is</div> <div>geen goede gebruiksaanwijzing</div></h1>
   </section> 
   
   <section class=comment>
