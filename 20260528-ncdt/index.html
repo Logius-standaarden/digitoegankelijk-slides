@@ -68,6 +68,7 @@
   
   <section class="slide" style="border: 0;">
     <img src="images/dashboard.png" class="cover" alt="screenshot van dashboard digitoegankelijk" />
+    <div class="related-url"><a href="https://dashboard.digitoegankelijk.nl">dashboard.digitoegankelijk.nl</a></div>  
   </section>
   
   <section class=comment>
@@ -112,9 +113,17 @@
   </section>
   
   <section class=comment>
-    <p>Want zilver in het periodiek systeem der elementen is natuurlijk Ag… wie weet waar dat voor staat?</p>
+    <p>Want zilver in het periodiek systeem der elementen is natuurlijk Ag… wie weet waar dat voor staat? (argentum)</p>
     <p>En dus… accessibility guidelines.</p>
     <p>Goed, die maken we dus, met een grote werkgroep bij het W3C, World Wide Web Consortium.</p>
+  </section>
+
+  <section class="slide one-word">
+    <div style="font-size: 3.5em;">WCAG 2 → 3</div>
+  </section>
+  
+  <section class=comment>
+    <p>En momenteel is onze focus vooral op de overgang van WCAG 2 naar 3</p>
   </section>
 
   <section class="slide" style="border: 0;">
@@ -140,6 +149,15 @@
   
   <section class=comment>
     <p>Het ging om maar liefst 736 commits en 582 bestanden… ik zie de wenkbrauwen van sommige ontwikkelaars in de zaal omhoog gaan… het gaat me even niet om best practices, en ik zal je niet vermoeien met de redenen, maar feit is dat we in en vlak na die week een hoop hebben aangepast.</p> 
+  </section>
+  
+  <section class="slide" style="border: 0;">
+    <img src="images/wcag3.png" class="fit" alt="screenshot wcag3 spec" />
+    <div class="related-url"><a href="https://w3.org/TR/wcag3">w3.org/TR/wcag3</a></div>  
+  </section>
+  
+  <section class=comment>
+    <p>En daardoor is er nu de <a href="https://w3.org/TR/wcag3">WCAG 3 Working Draft</a>, online raad te plegen.</p> 
   </section>
 
 
@@ -171,7 +189,7 @@
   
   <section class="slide">
     <h1>WCAG 2: richtlijnen (13)</h1>
-    <p class="larger-150">Adresseren de principes.</p>
+    <p class="larger-150">Vullen de principes in.</p>
   </section> 
   
   <section class=comment>
@@ -183,7 +201,7 @@
 
   <section class="slide" style="position: relative;">
     <h1>WCAG 2: succescriteria (55)</h1>
-    <p class="larger-120">Voorbeeld: <b>1.1.1 Niet-tekstuele content</b></p>
+    <p class="larger-150">Voorbeeld: <b>1.1.1 Niet-tekstuele content</b></p>
     <img src="images/111.png"  style="position: absolute; transform: rotate(-1deg); top: 8em; left: 0;" alt="screenshot van WCAG 1.1.1 understanding document" />
   </section> 
   
@@ -204,7 +222,6 @@
 
   <section class="slide chapter">
     <h1>Wat is er <i>mis</i> met WCAG 2?</h1>
-    <h2>Of: wat kunnen we beter maken?</h2>
   </section>
 
   <section class=comment>
@@ -270,7 +287,8 @@
   </section>
 
   <section class="slide">
-    <h1><div>In WCAG 2 mist</div> <div>integratie met authoring tools (zoals CMS, LMS), browsers, hulptechnologieën</div></h1>
+    <h1><div>In WCAG 2 mist</div> <div>integratie met authoring tools, browsers, hulptechnologieën</div></h1>
+    <img src="images/cms.png" class="cover" alt="van links naar rechts: WordPress editor, screenshot van voiceover headings menu, Sanity WYSIWYG editor, Firefox beginscherm." />
   </section> 
   
   <section class=comment>
@@ -311,56 +329,75 @@
   </section>
 
 
-  <section class="slide one-word">
+  <section class="slide one-word one-word-bg-blend">
     <div>verbreding</div>
   </section>
   
   <section class=comment>
-    <p>WCAG 3 covert een breder spectrum aan beperkingen.</p>
+    <p>WCAG 3 covert een breder spectrum aan beperkingen, en om in de gaten te blijven houden of de eisen aansluiten op beperkingen, taggen we.</p>
+  </section>
+  
+  <section class="slide thought">
+    <p>WCAG moet zorgen dat zoveel mogelijk mensen content kunnen gebruiken.</p>
+  </section>
+  
+  <section class="comment">
+    <p>En om hiervoor te zorgen taggen we alle eisen in WCAG 3 in twee soorten categorieën.</p>
   </section>
   
   <section class="slide">
-    <h1>Functional performance criteria</h1>
-    <ul style="columns: 2; gap: 2em; font-size: 80%;">
-        <li>Usage without vision</li>
-        <li>Usage with limited vision</li>
-        <li>Usage without perception of colour</li>
-        <li>Usage without hearing</li>
-        <li>Usage with limited hearing</li>
-        <li>Usage with no or limited vocal capability</li>
-        <li>Usage with limited manipulation or strength</li>
-        <li>Usage with limited reach</li>
-        <li>Minimize photosensitive seizure triggers</li>
-        <li>Usage with limited cognition, language or learning</li>
-        <li>Privacy</li>
+    <h1>Het moet werken voor gebruik…</h1>
+    <ul style="columns: 2; gap: 2em;">
+        <li>…zonder zicht</li>
+        <li>…met beperkt zicht</li>
+        <li>…zonder kleurperceptie</li>
+        <li>…zonder gehoor</li>
+        <li>…met beperkt gehoor</li>
+        <li>…zonder / met beperkte spraak</li>
+        <li>…met verminderde kracht</li>
+        <li>…met minder bereik</li>
+        <li>…met verminderde cognitie of taalvaardigheid</li>
     </ul>
   </section> 
   
   <section class=comment>
-    <p>Deze kun je kennen van Section 508, waar ze worden gebruikt.</p>
+    <p>De eerste is de zogenaamde <b>functional performance criteria</b>. Deze kun je kennen van Section 508, waar ze nu al worden gebruikt. Ze gaan over hoe mensen technologie gebruiken.</p>
+    <p>Dit is een slimme keuze… dit zijn allemaal categorieën waarvan we er vanuit kunnen gaan dat die op onze site van toepassing zijn. Vroeg of laat komt er iemand naar je site zonder zicht of met beperkt gehoor. Je wilt zorgen dat je site daar klaar voor is.</p>
   </section>
   
   <section class="slide">
     <h1>Digital Accessibility Framework</h1>
-    <p>Gaat om relatie tussen <b>wat individu kan</b>, <b>benodigde support</b> en <b>eigenschappen van content</b></p>
-    <ul style="columns: 4; gap: 2em; font-size: 70%;">
-          <li>Executive function</li>
-          <li>Self regulation</li>
-          <li>Reasoning</li>
-          <li>Attention</li>
-          <li>Knowledge</li>
-          <li>Language</li>
-          <li>Memory</li>
-          <li>Perception Processing</li>
-          <li>Mobility</li>
-          <li>Multidimensional body movement</li>
-          <li>Fine motor control</li>
-          <li>Physical attributes</li>
-          <li>Fitness</li>
-          <li>Auditory Perception (includes auditory triggers)</li>
-          <li>Tactile Perception (includes tactile triggers)</li>
-          <li>Visual Perception (includes visual triggers)</li>
-      </ul>
+    <p class="larger-150">Gaat om relatie tussen <b>wat individu kan</b>, <b>benodigde support</b> en <b>eigenschappen van content</b></p>
+    <div class="related-url"><a href="https://accessiblecommunity.org/daf/">accessiblecommunity.org/daf/</a></div>  
+  </section> 
+  
+  <section class=comment>
+  </section>
+
+  <section class="slide">
+    <h1>Digital Accessibility Framework</h1>
+    <style>
+      #daf-list { columns: 4; gap: 2em; font-size: 85%; }
+      #daf-list li { list-style: none; padding-left: 0; margin-left: 0; display: block; break-inside: avoid-column; }
+    </style>
+    <ul id="daf-list">
+    <li>Executive function</li>
+    <li>Self regulation</li>
+    <li>Reasoning</li>
+    <li>Attention</li>
+    <li>Knowledge</li>
+    <li>Language</li>
+    <li>Memory</li>
+    <li>Perception Processing</li>
+    <li>Mobility</li>
+    <li>Multidimensional body movement</li>
+    <li>Fine motor control</li>
+    <li>Physical attributes</li>
+    <li>Fitness</li>
+    <li>Auditory Perception (includes auditory triggers)</li>
+    <li>Tactile Perception (includes tactile triggers)</li>
+    <li>Visual Perception (includes visual triggers)</li>
+    </ul>
   </section> 
   
   <section class=comment>
@@ -374,12 +411,19 @@
     <p>Als je overigens meer wilt weten over verschillende gebruikers… Paul van Buuren vertelt straks in de parallelsessie meer over dat je altijd meer gebruikers hebt dan je denkt!</p>
   </section>
   
-  <section class="slide one-word">
+  <section class="slide one-word one-word-bg-blend">
     <div>innovatie</div>
   </section>
   
   <section class=comment>
     <p>WCAG 3 is beter voorbereid op nieuwe technologie.</p>
+  </section>
+  
+  <section class="slide thought">
+    <p>WCAG 3 is klaar voor “emerging technologies” door <strong>minder aannames</strong>.</p>
+  </section>
+  
+  <section class="comment">
   </section>
   
   <section class="slide">
@@ -398,12 +442,20 @@
   <section class=comment>
   </section>  
   
-  <section class="slide one-word">
+  <section class="slide one-word one-word-bg-blend">
     <div>integratie</div>
   </section>
   
   <section class="comment">
     <p>Er is in WCAG 2 ook een oplossing voor betere integratie met andere tools: browsers, authoring tools, design systems, etc.</p>
+  </section>
+  
+  <section class="slide thought">
+    <p>De weg naar toegankelijkheid wordt minder belangrijk.</p>
+  </section>
+  
+  <section class="comment">
+    
   </section>
   
   <section class="slide">
@@ -424,13 +476,20 @@
     </section>  
     
 
-  <section class="slide one-word">
+  <section class="slide one-word one-word-bg-blend">
     <div>reorganisatie</div>
   </section>
   
   <section class=comment>
   </section>
  
+ <section class="slide thought">
+   <p>De content is anders georganiseerd, principes en succescriteria gaan eruit.</p>
+ </section>
+ 
+ <section class="comment">
+   
+ </section>
 
   <section class="slide">
       <h1>Nu (WCAG 2)</h1>
@@ -535,7 +594,6 @@
   <section class="slide">
     <h1>WCAG 2 blijft nog lang</h1>
     <div class="larger-150">
-    <p>Dit is een proces van vele jaren (~2030).</p>
     <p>Nu eerst WCAG 2.1, straks WCAG 2.2</p>
     </div>
   </section> 
@@ -552,14 +610,7 @@
   
   <section class=comment>
   </section>  
-    
-  <section class="slide">
-    <h1>Uiteindelijk dezelfde principes</h1>
-    <p class="larger-150">Maar dan <b>overzichtelijker</b>, <b>completer</b> en meer <b>future-proof</b>.</p>
-  </section> 
-  
-  <section class=comment>
-  </section>  
+
   
   <section class="slide">
     <h1>Overgang</h1>
@@ -568,7 +619,14 @@
   
   <section class=comment>
   </section>  
+
+  <section class="slide">
+    <h1>WCAG 3 bouwt op dezelfde principes</h1>
+    <p class="larger-150">Maar dan <b>overzichtelijker</b>, <b>completer</b> en meer <b>future-proof</b>.</p>
+  </section> 
   
+  <section class=comment>
+  </section>    
   <section class="slide chapter">
     <h1>Samenvattend</h1>
   </section>
