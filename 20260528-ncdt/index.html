@@ -32,7 +32,7 @@
     Leaving slide mode.
   </div>
 
-  <style>.logoslide { border: 0 !important; display: inline-flex; } .logoslide img { width: 20em; margin: auto auto; }  .logoslide::after { content: '';  }</style>
+  <style>.logoslide { background-color: white; border: 0 !important; display: inline-flex; } .logoslide img { width: 20em; margin: auto auto; } .darkmode .logoslide img { background-color: #fff; display: block; border-radius: 1em; border: 1em solid white; }  .logoslide::after { content: '';  }</style>
   
   <section class="slide logoslide" id="cover">
     <img src="images/ncdt-transparant-9524.png" alt="ncdt logo" />
@@ -172,7 +172,9 @@
 
   <style>
     #wcag-principes { display: flex;  padding-left: 0; margin-left: 0; gap: .6em; margin-top: 3em; } 
-    #wcag-principes li { list-style: none; margin-left: 0; border-radius: 100%; align-content: center; aspect-ratio: 1 / 1; flex: 1; text-align: center; background-color: var(--lux-color-violet-700); color: white; font-weight: bold; font-size: 1.25em; line-height: 1; }</style>  
+    #wcag-principes li { list-style: none; margin-left: 0; border-radius: 100%; align-content: center; aspect-ratio: 1 / 1; flex: 1; text-align: center; background-color: var(--lux-color-violet-700); color: white; font-weight: bold; font-size: 1.25em; line-height: 1; }
+    .darkmode #wcag-principes li { background-color: var(--lux-color-violet-500); }
+  </style>  
   <section class="slide">
     <h1>WCAG 2: principes (4)</h1>
     <ul class="incremental" id="wcag-principes">
