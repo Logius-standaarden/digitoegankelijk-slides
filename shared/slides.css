@@ -296,7 +296,7 @@ img.fit, video.fit {object-fit: contain}
 .slide::after {content: counter(slide); position: absolute;
   right: 0.6em; box-sizing: border-box; width: 2em /*= L/2 */; bottom: 0.6em;
   text-align: center; color: var(--main) /*hsl(211, 100%, 17%)*/}
-.slide.cover::after { content: ''!important; }
+.slide.cover::after {}
 .slide.final::after {}
 .full .slide::after {position: fixed} /* In case the slide scrolls */
 .clear .slide::after, .slide.clear::after {content: none}
@@ -872,7 +872,7 @@ body {--time-factor: 0} /* Make sure it is defined, will be set by b6+ */
         "c   c   e   f" auto
 	"c   c   g   h" auto
        / 1fr 1fr 1fr 1fr}
-.clock time {grid-area: a; padding: 0 0.3em; font-size: 300%;}
+.clock time {grid-area: a; padding: 0 0.3em}
 .clock .timepause {grid-area: g}
 .clock .timedec {grid-area: e}
 .clock .timeinc {grid-area: f}
