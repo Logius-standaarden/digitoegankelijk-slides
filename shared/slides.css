@@ -785,7 +785,8 @@ body.framed .progress {display: none}
   gap: 0.5rem}
 .has-2nd-window .clock, .has-2nd-window .fullclock {
   position: fixed; top: 1em; right: 1em; margin: 0;
-  right: 0; top: 0; border: thin solid; box-shadow: none}
+  right: 0; top: 0; border: thin solid; box-shadow: none; font-size: 150%;}
+.has-2nd-window time { font-size: 2em;}
 .has-2nd-window .b6-ui {
   grid-area: buttons; margin: 0; top: 0;
   border: thin solid; position: static; border-radius: 0.5rem;
