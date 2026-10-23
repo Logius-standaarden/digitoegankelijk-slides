@@ -105,6 +105,7 @@
   src: url(fonts/RO-SerifWeb-Bold.woff) format("woff");
 }
 
+h1 { text-wrap: balance; }
 .larger-120 { font-size: 120%; }
 .larger-150 { font-size: 150%; }
 h1:has(div:first-child + div) div:first-child { font-size: 50%; font-weight: normal; color: black; margin-bottom: 0.5em;}
